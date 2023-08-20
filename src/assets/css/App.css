@@ -107,23 +107,49 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
 
 /* tarjetas servicios */
 
-.cards {
-  display: flex;
+.title-service{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
-.card {
+.line{
+  width: 5rem;
+  height: 5px;
+  background: #f3e304;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.cards-service {
+  margin: 1rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card-service {
   margin: 10px;
+  margin-bottom: 2rem;
   width: 300px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-.card .image img {
-  max-width: 100%;
+.image-service img {
+  width: 100%;
+  height: 200px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  object-fit: cover;
 }
-.card .content {
-  padding: 20px 30px;
+.card-service .content {
+  padding: 5px 30px;
+}
+
+.card-service .content h2{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 

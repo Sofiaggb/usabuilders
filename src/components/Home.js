@@ -11,7 +11,7 @@ class Home extends Component {
                 <section className="section-1">
                     <img className="lazyloaded" src={paisaje} alt="portada" />
                     <div className="loaded-phrase">
-                        <h1 className="title">Tenemos lo que necesitas</h1>
+                        <h1 className="title">Tenemos lo que necesitas y más...</h1>
                     </div>
                 </section>
 
