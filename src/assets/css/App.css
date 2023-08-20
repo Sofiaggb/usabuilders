@@ -1,0 +1,129 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+
+  /* fuentes */
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+  background: white;
+  /* border-bottom: 1px solid black; */
+  border-top: 4px solid rgb(0, 69, 116) ;
+}
+
+.center{
+  width: 90%;
+  margin: 0px auto;
+}
+
+.clearfix{
+  clear: both;
+  float: none;
+}
+
+#logo{
+  width: 15%;
+  font-size: 30px;
+  float: left;
+}
+
+
+#logo img{
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+
+#menu{
+  width: 70%;
+  float: right;
+  font-size: 18px;
+}
+
+#menu ul{
+  line-height: 60px;
+  width: 60%;
+  float: right;
+  margin-top: 40px;
+margin-bottom: 0;
+}
+
+#menu ul li{
+  display: block;
+  display: inline-block;
+  list-style: none;
+  /* height: 40px; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#menu a{
+  text-decoration: none;
+  color: black;
+  transition: all 300ms;
+}
+
+#menu a:hover, .active{
+  color: rgb(54, 117, 117) !important;
+}
+
+
+/* home image*/
+
+.section-1{
+  width: 100%;
+   height: 600px;
+   background: rgb(20, 20, 20);
+}
+.lazyloaded{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+}
+
+
+.loaded-phrase{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  text-align: left;
+  width: 30%;
+}
+
+.title {
+font-size: 6rem;
+color: white;
+text-shadow: 4px 4px 4px rgb(54, 50, 50);
+}
+
+/* tarjetas servicios */
+
+.cards {
+  display: flex;
+}
+.card {
+  margin: 10px;
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.card .image img {
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card .content {
+  padding: 20px 30px;
+}
+
+
