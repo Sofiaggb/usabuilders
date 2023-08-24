@@ -13,7 +13,6 @@ header{
   height: 100px;
   width: 100%;
   background: white;
-  /* border-bottom: 1px solid black; */
   border-top: 4px solid rgb(0, 69, 116) ;
 }
 
@@ -28,7 +27,7 @@ header{
 }
 
 #logo{
-  width: 15%;
+  width: 12rem;
   font-size: 30px;
   float: left;
 }
@@ -40,6 +39,16 @@ header{
   width: 100%;
 }
 
+.hamburger{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  font-size: 40px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
 
 #menu{
   width: 70%;
@@ -47,7 +56,7 @@ header{
   font-size: 18px;
 }
 
-#menu ul{
+.menu-ul{
   line-height: 60px;
   width: 60%;
   float: right;
@@ -125,6 +134,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   margin: 1rem;
   margin-top: 2rem;
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(4, 1fr);
 }
 .card-service {
@@ -151,5 +161,244 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
+.content p{
+  font-size: 15px;
+}
+
+/* footer */
+
+.footer{
+  width: 100%;
+  background: #111131;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.contact{
+  width: 50%;
+  /* background:#FFCC00;  */
+  display: inline-block;
+}
+
+.namecontact{
+  padding: 10px;
+  float: left;
+  /* background: #0493f3; */
+}
+
+.namecontact h2{
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contactos{
+  padding: 10px;
+  text-align: left;
+  /* background: #07ad68; */
+  float: left;
+}
+
+.contactos  i{
+  font-size: 20px;
+  padding-right: 5px;
+
+}
+.cont{
+  float: left;
+}
+.m{
+  margin-left: 15px;
+}
+.copyright{
+  font-size: 0.7rem;
+  float: right;
+  width: 30%;
+}
 
 
+
+/* responsive */
+
+@media (max-width :  1300px) {
+  /* servicios */
+  .cards-service {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width :  1130px) {
+
+  /* portada home */
+  .title {
+    font-size: 5rem;
+  }
+  .section-1 {
+    height: 500px;
+  }
+}
+
+@media (max-width :  980px) {
+  /* servicios */
+   .cards-service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width :  960px) {
+  /* pie de pagina */
+  .contact {
+  width: 65%;
+  }
+}
+
+@media (max-width :  940px) {
+
+  /* portada home */
+.title {
+  font-size: 4rem;
+}
+  .section-1 {
+    height: 450px;
+  }
+}
+
+@media (max-width :  920px) {
+
+  /* menu */
+  #menu {
+  width: 60%;
+  }
+
+  #menu ul {
+    width: 100%;
+  }
+}
+
+@media (max-width :  830px) {
+   /* portada home */
+  .section-1 {
+    height: 400px;
+  }
+}
+
+@media (max-width :  760px) {
+    /* portada home */
+  .title {
+    font-size: 3.5rem;
+  }
+  .loaded-phrase {
+    top: 4rem;
+  }
+    .section-1 {
+    height: 350px;
+  }
+}
+
+@media (max-width :  740px) {
+
+  /* pie de pagina */
+  .cont{
+    float: none;
+  }
+  .m{
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width :  670px) {
+  
+  /* menu */
+  .hamburger{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .center {
+    width: 100%;
+  }
+  #logo {
+    margin-left: 2rem;
+  }
+  .menu-ul {
+  background: white;
+  position: absolute;
+  top: 3rem;
+  right: 0rem;
+  z-index: 1;
+  visibility: inherit;
+  opacity: 0;
+  transition: all 300ms;
+  
+}
+
+.turn-on-menu{
+  visibility: visible;
+  opacity: 1;
+}
+
+  #menu ul li {
+    display: block;
+  }
+
+  #menu a {
+    padding: 1rem 5rem 1rem 5rem;
+  }
+  
+  /* portada home */
+  .title {
+    font-size: 3rem;
+  }
+
+    .section-1 {
+    height: 300px;
+  }
+
+}
+
+@media (max-width :  660px) {
+  /* servicios */
+     .cards-service {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width :  570px) {
+    /* portada home */
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .loaded-phrase {
+      top: 5rem;
+    }
+  
+      .section-1 {
+      height: 250px;
+    }
+}
+
+@media (max-width :  470px) {
+  /* portada home */
+  .title {
+    font-size: 2rem;
+  }
+
+    .section-1 {
+    height: 200px;
+  }
+}
+
+@media (max-width :  380px) {
+  /* portada home */
+  .title {
+    font-size: 1.8rem;
+  }
+  .loaded-phrase {
+    top: 6rem;
+  }
+
+    .section-1 {
+    height: 180px;
+  }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 class Router extends Component{
 
@@ -15,6 +16,8 @@ class Router extends Component{
                     <Route exact path="/" component={Home} />
                     <Route exact path="/home" component={Home} />
                 </Switch>
+
+                <Footer/>
             </BrowserRouter>
         );
     }

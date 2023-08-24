@@ -4,6 +4,23 @@ import { NavLink } from "react-router-dom";
 
 class Header extends Component {
 
+    // constructor(props) {
+    //     super(props);
+        // this.state = {
+        //   clase: "menu-ul"
+        // };
+    //   }
+
+    state = {
+        clase: "menu-ul"
+      };
+
+    show = () =>{
+        this.setState(prevState => ({
+            clase: prevState.clase === "menu-ul" ? "menu-ul turn-on-menu" : "menu-ul"
+          }));
+    }
+
     render(){
         return(
             <header id="header">
@@ -17,7 +34,12 @@ class Header extends Component {
     
                 {/* menu  */}
                 <nav id="menu">
-                    <ul>
+                    
+                    <div className="hamburger" onClick={this.show}>
+                        <i class='bx bx-menu'></i>
+                    </div>
+                    
+                    <ul className={this.state.clase}>
                         <li><NavLink activeClassName="active" to="/about">Nosotros</NavLink></li>
                         <li><NavLink activeClassName="active"  to="/contact" >Contáctanos</NavLink></li>
                         <li><NavLink activeClassName="active" to="/language">Idioma</NavLink></li>
