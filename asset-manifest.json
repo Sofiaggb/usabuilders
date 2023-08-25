@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/usabuilders/static/css/main.59dc5bdc.css",
-    "main.js": "/usabuilders/static/js/main.da627eb5.js",
+    "main.js": "/usabuilders/static/js/main.fcb54012.js",
     "static/js/787.6f1d7252.chunk.js": "/usabuilders/static/js/787.6f1d7252.chunk.js",
     "static/media/paisaje.jpeg": "/usabuilders/static/media/paisaje.ff8090e692e6ab74929a.jpeg",
-    "static/media/techo.jpg": "/usabuilders/static/media/techo.bb2012d71c029be2f9f6.jpg",
     "static/media/renovacion.jpg": "/usabuilders/static/media/renovacion.d50b5a3029ca6586e8ab.jpg",
     "static/media/logo.jpg": "/usabuilders/static/media/logo.edb982828c94b702176a.jpg",
     "static/media/revestimiento.jpg": "/usabuilders/static/media/revestimiento.5e1fb2b466e41377bc9b.jpg",
@@ -14,11 +13,11 @@
     "static/media/vallas.jpg": "/usabuilders/static/media/vallas.e69607b2e396fbe4b4c9.jpg",
     "index.html": "/usabuilders/index.html",
     "main.59dc5bdc.css.map": "/usabuilders/static/css/main.59dc5bdc.css.map",
-    "main.da627eb5.js.map": "/usabuilders/static/js/main.da627eb5.js.map",
+    "main.fcb54012.js.map": "/usabuilders/static/js/main.fcb54012.js.map",
     "787.6f1d7252.chunk.js.map": "/usabuilders/static/js/787.6f1d7252.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59dc5bdc.css",
-    "static/js/main.da627eb5.js"
+    "static/js/main.fcb54012.js"
   ]
 }
