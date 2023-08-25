@@ -20,6 +20,7 @@ class CardsService extends Component {
     componentWillMount() {
         this.setState({
             servicios: [
+                { title: 'Eléctricidad', image: luz, content:'Ofrecemos servicios de todos los aspectos de  instalaciones eléctricas.' },
                 { title: 'Techumbre', image: techumbre, content:'Nuestro equipo  identificarán el problema y efectuarán una reparación de inmediato para salvaguardar su propiedad' },
                 { title: 'Vallas', image: vallas, content:'ofrecemos los servicios de instalación y mantenimiento' },
                 { title: 'Revestimiento', image: revestimiento, content:'soluciones  de belleza libre de mantenimiento y la durabilidad probada.'},
@@ -29,8 +30,7 @@ class CardsService extends Component {
                 { title: 'Cuidado del Césped', image: cesped, content:'Proporcionamos servicios de cuidado del césped que incluyen cortar, recortar, fertilizar, controlar malezas, recortar arbustos.' },
                 { title: 'Lavadora a Presión', image: hidroyet, content:'Servicios  con el objetivo de conseguir resultados de limpieza perfectos en el hogar.' },
                 { title: 'Azulejos y Suelos', image: suelo, content:'Experiencia en instalacion de azulejos y pisos' },
-                { title: 'Renovación General', image: renovacion, content:'Realizamos tu proyecto  de cambiar lo que deseas en tu hogar' },
-                { title: 'Eléctricidad', image: luz, content:'Ofrecemos servicios de todos los aspectos de  instalaciones eléctricas.' },
+                { title: 'Renovación General', image: renovacion, content:'Realizamos tu proyecto  de cambiar lo que deseas en tu hogar' }
             ]
         })
     }
