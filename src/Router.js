@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import Error from "./components/Error";
 
 class Router extends Component{
 
@@ -13,8 +15,13 @@ class Router extends Component{
                 <Header/>
 
                 <Switch>
+                    <Route exact path="/" component={Home} />
                     <Route exact path="/usabuilders" component={Home} />
                     <Route exact path="/home" component={Home} />
+                    <Route exact path="/about" component={About} />
+
+                    <Route exact path="*" component={Error} />
+                     
                 </Switch>
 
                 <Footer/>

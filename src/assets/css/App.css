@@ -165,6 +165,69 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   font-size: 15px;
 }
 
+/* about us */
+.about{
+  display: inline-block;
+  font-family: Roboto Condensed,sans-serif;
+  width: 100%;
+}
+
+.mision{
+  width: 50%;
+  float: left;
+
+}
+
+.mision-center{
+  width: 80%;
+  margin: 0px auto;
+  text-align: left;
+}
+
+.con{
+  display: inline-block;
+}
+
+.t-m{
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  text-transform:uppercase;
+  float: left;
+}
+.line-about {
+  width: 5rem;
+  height: 3px;
+  background: #f3cf04;
+  margin: auto;
+  margin-bottom: 1rem;
+  float: left;
+  margin-top: 4.5rem;
+  margin-left: 1rem;
+}
+
+.title-mision{
+  font-size: 3rem;
+  color: #20201e;
+  margin-top: 1rem;
+  text-transform:uppercase;
+}
+
+.tex-mision {
+  line-height: 2;
+}
+
+.image-mision{
+  width: 50%;
+  height: 500px;
+  float: left;
+}
+
+.image-mision img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* footer */
 
 .footer{
@@ -215,6 +278,33 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   width: 30%;
 }
 
+
+/* error page */
+
+#main{
+  display: table;
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+}
+
+.fof{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1{
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .5s alternate infinite;
+  color: #3f3f3c;
+}
+
+@keyframes type{
+  from{box-shadow: inset -3px 0px 0px #888;}
+  to{box-shadow: inset -3px 0px 0px transparent;}
+}
 
 
 /* responsive */

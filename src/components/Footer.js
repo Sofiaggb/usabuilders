@@ -11,7 +11,7 @@ class Footer extends Component {
                     </div>
                     <div className="contactos">
 
-                         <div className="cont"><i class='bx bx-phone'></i> (757) 249-9898</div>
+                         <div className="cont"><i class='bx bx-phone'></i> +1 (757) 749-9898</div>
                          <div className="cont m"><i class='bx bx-envelope'></i>usabuilders2020@gmail.com   </div>                     
 
                     </div>
