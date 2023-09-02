@@ -15,6 +15,8 @@ class Contact extends Component {
         emailjs.sendForm(serviceId, templateId, this.formRef.current, apikey)
         .then(response => console.log(response))
         .catch(error => console.log(error));
+
+        event.target.reset();
      }
 
     render() {
@@ -61,13 +63,12 @@ class Contact extends Component {
 
                     <ul className="contact-list">
                         <li className="list-item">
-                            <div className="city">
-                            <i className='bx bx-location-plus place' ></i>
-                            <div className="place space">
-                            <span className="contact-text">Ciudad, Hampton Rd <br>
-                            </br>Estado, Virginia</span>
-                            </div>
-                            </div>
+                            {/* <div className="city"> */}
+                            <i className='bx bx-location-plus' ></i>
+                            {/* <div className="place space"> */}
+                            <span className="contact-text space">Hampton Rd, Virginia</span>
+                            {/* </div> */}
+                            {/* </div> */}
                         </li>
 
                         <li className="list-item">
