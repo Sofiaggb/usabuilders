@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/usabuilders/static/css/main.59dc5bdc.css",
-    "main.js": "/usabuilders/static/js/main.fcb54012.js",
+    "main.css": "/usabuilders/static/css/main.bb70c236.css",
+    "main.js": "/usabuilders/static/js/main.0aa4faf6.js",
     "static/js/787.6f1d7252.chunk.js": "/usabuilders/static/js/787.6f1d7252.chunk.js",
+    "static/media/about.jpg": "/usabuilders/static/media/about.155c0dde67757afbe800.jpg",
     "static/media/paisaje.jpeg": "/usabuilders/static/media/paisaje.ff8090e692e6ab74929a.jpeg",
     "static/media/renovacion.jpg": "/usabuilders/static/media/renovacion.d50b5a3029ca6586e8ab.jpg",
+    "static/media/contact.jpg": "/usabuilders/static/media/contact.0de82f17806578904c5a.jpg",
     "static/media/logo.jpg": "/usabuilders/static/media/logo.edb982828c94b702176a.jpg",
     "static/media/revestimiento.jpg": "/usabuilders/static/media/revestimiento.5e1fb2b466e41377bc9b.jpg",
     "static/media/cesped.jpg": "/usabuilders/static/media/cesped.d416b03b991b59651e18.jpg",
@@ -12,12 +14,12 @@
     "static/media/paneles.jpg": "/usabuilders/static/media/paneles.47f410070e76c13881d9.jpg",
     "static/media/vallas.jpg": "/usabuilders/static/media/vallas.e69607b2e396fbe4b4c9.jpg",
     "index.html": "/usabuilders/index.html",
-    "main.59dc5bdc.css.map": "/usabuilders/static/css/main.59dc5bdc.css.map",
-    "main.fcb54012.js.map": "/usabuilders/static/js/main.fcb54012.js.map",
+    "main.bb70c236.css.map": "/usabuilders/static/css/main.bb70c236.css.map",
+    "main.0aa4faf6.js.map": "/usabuilders/static/js/main.0aa4faf6.js.map",
     "787.6f1d7252.chunk.js.map": "/usabuilders/static/js/787.6f1d7252.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59dc5bdc.css",
-    "static/js/main.fcb54012.js"
+    "static/css/main.bb70c236.css",
+    "static/js/main.0aa4faf6.js"
   ]
 }
