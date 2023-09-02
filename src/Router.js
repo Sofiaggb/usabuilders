@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
+import Contact from "./components/Contact";
 
 class Router extends Component{
 
@@ -19,6 +20,7 @@ class Router extends Component{
                     <Route exact path="/usabuilders" component={Home} />
                     <Route exact path="/home" component={Home} />
                     <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
 
                     <Route exact path="*" component={Error} />
                      

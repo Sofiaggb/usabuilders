@@ -12,13 +12,25 @@ class Header extends Component {
     //   }
 
     state = {
-        clase: "menu-ul"
+        clase: "menu-ul",
+        hamburgerShow: "hamburger",
+        closeHamburger: "close-hamburger"
       };
 
     show = () =>{
         this.setState(prevState => ({
-            clase: prevState.clase === "menu-ul" ? "menu-ul turn-on-menu" : "menu-ul"
+            clase: prevState.clase === "menu-ul" ? "menu-ul turn-on-menu" : "menu-ul",
+            hamburgerShow: prevState.hamburgerShow === "hamburger" ? "hamburger hamburger-hidden" : "hamburger",
+            closeHamburger: prevState.closeHamburger === "close-hamburger" ? "close-hamburger close-hamburger-show" : "close-hamburger"
           }));
+    }
+
+    close = () => {
+        this.setState(prevState => ({
+            clase: prevState.clase === "menu-ul turn-on-menu" ? "menu-ul" : "menu-ul turn-on-menu",
+            hamburgerShow: prevState.hamburgerShow === "hamburger hamburger-hidden" ? "hamburger" : "hamburger hamburger-hidden",
+            closeHamburger: prevState.closeHamburger === "close-hamburger close-hamburger-show" ? "close-hamburger" : "close-hamburger close-hamburger-show"
+        }))
     }
 
     render(){
@@ -35,9 +47,14 @@ class Header extends Component {
                 {/* menu  */}
                 <nav id="menu">
                     
-                    <div className="hamburger" onClick={this.show}>
-                        <i class='bx bx-menu'></i>
+                    <div className={this.state.hamburgerShow} onClick={this.show}>
+                        <i className='bx bx-menu'></i>
+
                     </div>
+                    <div className={this.state.closeHamburger}  onClick={this.close}>
+                    <i class='bx bx-x'></i>
+                    </div>
+
                     
                     <ul className={this.state.clase}>
                         <li><NavLink activeClassName="active" to="/about">Nosotros</NavLink></li>

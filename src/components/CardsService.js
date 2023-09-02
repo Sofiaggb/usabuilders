@@ -47,11 +47,11 @@ class CardsService extends Component {
 
                 {this.state.servicios.map((servicio, i) => {
                     return (
-                        <div className="card-service">
+                        <div key={i} className="card-service">
                             <div className="image-service">
                                 <img src={servicio.image} alt={servicio.title} />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2>{servicio.title}</h2>
                                 <div className="line"></div>
                                 <p>{servicio.content}</p>
