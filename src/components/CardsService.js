@@ -28,7 +28,7 @@ class CardsService extends Component {
                 { title: 'Pinturas', image: pintura, content:'Nos especializamos en pintar condominios y apartamentos y mantenimiento de pintura de rutina' },
                 { title: 'Reparacion de Paneles de Yeso', image: paneles, content:'Ofrecemos servicios de expertos en la  reparación de paneles de yeso' },
                 { title: 'Cuidado del Césped', image: cesped, content:'Proporcionamos servicios de cuidado del césped que incluyen cortar, recortar, fertilizar, controlar malezas, recortar arbustos.' },
-                { title: 'Lavadora a Presión', image: hidroyet, content:'Servicios  con el objetivo de conseguir resultados de limpieza perfectos en el hogar.' },
+                { title: 'Hidrojet', image: hidroyet, content:'Servicios  con el objetivo de conseguir resultados de limpieza perfectos en el hogar.' },
                 { title: 'Azulejos y Suelos', image: suelo, content:'Experiencia en instalacion de azulejos y pisos' },
                 { title: 'Renovación General', image: renovacion, content:'Realizamos tu proyecto  de cambiar lo que deseas en tu hogar' }
             ]

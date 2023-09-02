@@ -165,7 +165,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   object-fit: cover;
 }
 .card-service .content {
-  padding: 5px 30px;
+   padding: 1rem;
 }
 
 .card-service .content h2{
@@ -242,7 +242,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
 
 
 /* contactanos */
-.content{
+.content-contact{
   width: 80%;
   display: inline-block;
 }
@@ -528,7 +528,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
 
 @media (max-width :  1190px) {
   /* contactanos */
-  .content {
+  .content-contact {
     width: 100%;
   }
 }
