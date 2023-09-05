@@ -1,13 +1,19 @@
 import { Component } from "react";
 
+// importar traducciones
+import { withTranslation } from "react-i18next";
+
 class Footer extends Component {
     render() {
+        
+    const { t, i18n } = this.props;
+
         return (
             <div className="footer">
 
                 <div className="contact">
                     <div className="namecontact">
-                        <h2>Contáctanos:</h2>
+                        <h2>{t("header.contact")}</h2>
                     </div>
                     <div className="contactos">
 
@@ -28,4 +34,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default withTranslation('global') (Footer);

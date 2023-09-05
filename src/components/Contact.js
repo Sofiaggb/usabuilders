@@ -2,6 +2,9 @@ import React, { Component} from "react";
 
 import emailjs from "@emailjs/browser";
 
+// traduccion
+import { withTranslation } from "react-i18next";
+
 class Contact extends Component {
 
     formRef = React.createRef();
@@ -16,16 +19,20 @@ class Contact extends Component {
         .then(response => console.log(response))
         .catch(error => console.log(error));
 
+        // limpiar formulario
         event.target.reset();
      }
 
     render() {
+
+        const {t}= this.props;
+
         return (
             <div className="content-contact">
                 <div className="container-contact">
                     <div className="row header">
-                        <h1 className="contact-title">CONTÁCTANOS</h1>
-                        <h3 className="contact-subtitle">Tenemos lo que necesitas y ¡más!</h3>
+                        <h1 className="contact-title">{t("header.contact")}</h1>
+                        <h3 className="contact-subtitle">{t("contact.subtitle")}</h3>
                     </div>
                     <div className="row body">
                         <form  className="form-contact" ref={this.formRef} onSubmit={this.SendEmail}>
@@ -33,7 +40,7 @@ class Contact extends Component {
 
                                 <li>
                                     <div className="left">
-                                        <label htmlFor="name">Nombre</label>
+                                        <label htmlFor="name">{t("contact.name")}</label>
                                         <input type="text" className="data-contact" name="name" placeholder="John" required/>
                                     </div>
                                 </li>
@@ -46,12 +53,12 @@ class Contact extends Component {
                                 </li>
                                 <li><div className="divider"></div></li>
                                 <li>
-                                    <label htmlFor="message">Mensaje</label>
+                                    <label htmlFor="message">{t("contact.message")}</label>
                                     <textarea cols="46" rows="3" name="message" required></textarea>
                                 </li>
 
                                 <li>
-                                    <input className="btn btn-submit" type="submit" value="Enviar" />
+                                    <input className="btn btn-submit" type="submit" value={t("contact.submit")} />
                                 </li>
 
                             </ul>
@@ -92,4 +99,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default withTranslation('global') (Contact);

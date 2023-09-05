@@ -80,7 +80,6 @@ margin-bottom: 0;
   display: block;
   display: inline-block;
   list-style: none;
-  /* height: 40px; */
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -91,9 +90,25 @@ margin-bottom: 0;
   transition: all 300ms;
 }
 
-#menu a:hover, .active{
+#menu a:hover, .active, .idioma:hover{
   color: rgb(54, 117, 117) !important;
 }
+
+.idioma{
+  
+  background-color: #ffffff;
+  font-size: 18px;
+  border: none;
+  font-weight: 400;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.idioma option{
+  color: black;
+}
+
 
 
 /* home image*/
@@ -117,7 +132,7 @@ margin-bottom: 0;
   top: 3rem;
   left: 3rem;
   text-align: left;
-  width: 30%;
+  width: 45%;
 }
 
 .title {
@@ -592,6 +607,11 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
     .list-item {
       line-height: 3;
     }
+
+    /* menu */
+    .menu-ul {
+      width: 70%;
+    }
 }
 
 @media (max-width :  1000px) {
@@ -696,16 +716,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   }
 }
 
-@media (max-width :  690px) {
-
-  /* contactanos */
-  .direct-contact-container {
-    width: 60%;
-  }
-}
-
-@media (max-width :  670px) {
-  
+@media (max-width : 710px){
   /* menu */
   .hamburger{
     opacity: 1;
@@ -752,6 +763,19 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   #menu a {
     padding: 1rem 5rem 1rem 5rem;
   }
+  
+}
+
+@media (max-width :  690px) {
+
+  /* contactanos */
+  .direct-contact-container {
+    width: 60%;
+  }
+}
+
+@media (max-width :  670px) {
+  
   
   /* portada home */
   .title {
@@ -883,5 +907,11 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
 
     .section-1 {
     height: 180px;
+  }
+}
+
+@media (max-width :  366px) {
+  .contact-subtitle {
+    font-size: 0.9em;
   }
 }

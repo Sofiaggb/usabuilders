@@ -13,34 +13,68 @@ import suelo from "../assets/images/suelo.jpg";
 import renovacion from "../assets/images/renovacion.jpg";
 import luz from "../assets/images/luz.jpg";
 
+// traduccion
+import { withTranslation } from "react-i18next";
+
 class CardsService extends Component {
 
     state = {};
 
-    componentWillMount() {
-        this.setState({
+    constructor(props){
+        super(props);
+
+    // componentWillMount() {
+        this.state={
             servicios: [
-                { title: 'Eléctricidad', image: luz, content:'Ofrecemos servicios de todos los aspectos de  instalaciones eléctricas.' },
-                { title: 'Techumbre', image: techumbre, content:'Nuestro equipo  identificarán el problema y efectuarán una reparación de inmediato para salvaguardar su propiedad' },
-                { title: 'Vallas', image: vallas, content:'ofrecemos los servicios de instalación y mantenimiento' },
-                { title: 'Revestimiento', image: revestimiento, content:'soluciones  de belleza libre de mantenimiento y la durabilidad probada.'},
-                { title: 'Cubiertas', image: cubiertas, content:' Mejora el aislamiento de vivienda' },
-                { title: 'Pinturas', image: pintura, content:'Nos especializamos en pintar condominios y apartamentos y mantenimiento de pintura de rutina' },
-                { title: 'Reparacion de Paneles de Yeso', image: paneles, content:'Ofrecemos servicios de expertos en la  reparación de paneles de yeso' },
-                { title: 'Cuidado del Césped', image: cesped, content:'Proporcionamos servicios de cuidado del césped que incluyen cortar, recortar, fertilizar, controlar malezas, recortar arbustos.' },
-                { title: 'Hidrojet', image: hidroyet, content:'Servicios  con el objetivo de conseguir resultados de limpieza perfectos en el hogar.' },
-                { title: 'Azulejos y Suelos', image: suelo, content:'Experiencia en instalacion de azulejos y pisos' },
-                { title: 'Renovación General', image: renovacion, content:'Realizamos tu proyecto  de cambiar lo que deseas en tu hogar' }
+                { title: this.props.t("CardsService.electrician"), image: luz, content:this.props.t("CardsService.electricianContent") },
+                { title: this.props.t("CardsService.roofing"), image: techumbre, content:this.props.t("CardsService.roofingContent") },
+                { title: this.props.t("CardsService.fences"), image: vallas, content: this.props.t("CardsService.fencesContent") },
+                { title: this.props.t("CardsService.Siding"), image: revestimiento, content:this.props.t("CardsService.SidingContent")},
+                { title: this.props.t("CardsService.decks"), image: cubiertas, content: this.props.t("CardsService.decksContent") },
+                { title: this.props.t("CardsService.paint"), image: pintura, content: this.props.t("CardsService.paintContent") },
+                { title: this.props.t("CardsService.drywall"), image: paneles, content:this.props.t("CardsService.drywallContent") },
+                { title: this.props.t("CardsService.lawn"), image: cesped, content:this.props.t("CardsService.lawnContent") },
+                { title: this.props.t("CardsService.pressure"), image: hidroyet, content:this.props.t("CardsService.pressureContent") },
+                { title: this.props.t("CardsService.tiles"), image: suelo, content:this.props.t("CardsService.tilesContent") },
+                { title: this.props.t("CardsService.general"), image: renovacion, content:this.props.t("CardsService.generalContent") }
             ]
-        })
+        }
+    }
+
+    // usamos este método para obtener un nuevo estado a partir de las props
+    static getDerivedStateFromProps(nextProps, prevState) {
+      // Comparamos el idioma actual con el anterior
+      if (nextProps.i18n.language !== prevState.language) {
+        // Devolvemos un nuevo estado con los textos traducidos
+        return {
+          language: nextProps.i18n.language,
+                servicios: [
+                    { title: nextProps.t("CardsService.electrician"), image: luz, content: nextProps.t("CardsService.electricianContent") },
+                    { title: nextProps.t("CardsService.roofing"), image: techumbre, content:nextProps.t("CardsService.roofingContent") },
+                    { title: nextProps.t("CardsService.fences"), image: vallas, content: nextProps.t("CardsService.fencesContent") },
+                    { title: nextProps.t("CardsService.Siding"), image: revestimiento, content:nextProps.t("CardsService.SidingContent")},
+                    { title: nextProps.t("CardsService.decks"), image: cubiertas, content: nextProps.t("CardsService.decksContent") },
+                    { title: nextProps.t("CardsService.paint"), image: pintura, content: nextProps.t("CardsService.paintContent") },
+                    { title: nextProps.t("CardsService.drywall"), image: paneles, content:nextProps.t("CardsService.drywallContent") },
+                    { title: nextProps.t("CardsService.lawn"), image: cesped, content:nextProps.t("CardsService.lawnContent") },
+                    { title: nextProps.t("CardsService.pressure"), image: hidroyet, content:nextProps.t("CardsService.pressureContent") },
+                    { title: nextProps.t("CardsService.tiles"), image: suelo, content:nextProps.t("CardsService.tilesContent") },
+                    { title: nextProps.t("CardsService.general"), image: renovacion, content:nextProps.t("CardsService.generalContent") }
+                ]
+            }
+        }
+        return null;
     }
 
     render() {
+
+        const {t, i18n} = this.props;
+
         return (
       
 <div className="servicios">
     
-    <h1  className="title-service">Nuestros Servicios</h1>
+    <h1  className="title-service">{t("CardsService.title")}</h1>
     <div className="line"></div>
     
            <div className="cards-service">
@@ -68,4 +102,4 @@ class CardsService extends Component {
     }
 }
 
-export default CardsService;
+export default withTranslation('global') (CardsService);

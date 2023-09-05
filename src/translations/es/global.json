@@ -1,0 +1,52 @@
+{
+    "header":{
+        "about": "Nosotros",
+        "contact": "Contáctanos",
+        "en": "Ingles",
+        "es": "Español"
+    },
+
+    "home":{
+        "title": "Tenemos lo que necesitas y más..."
+    },
+
+    "CardsService":{
+        "title": "Nuestros Servicios",
+        "electrician": "Electricidad",
+        "electricianContent": "Ofrecemos servicios de todos los aspectos de  instalaciones eléctricas.",
+        "roofing": "Techumbre",
+        "roofingContent": "Nuestro equipo  identificarán el problema y efectuarán una reparación de inmediato para salvaguardar su propiedad",
+        "fences": "Vallas",
+        "fencesContent":"Ofrecemos los servicios de instalación y mantenimiento",
+        "Siding": "Revestimiento",
+        "SidingContent": "soluciones  de belleza libre de mantenimiento y la durabilidad probada.",
+        "decks": "Cubiertas",
+        "decksContent": "Mejora el aislamiento de vivienda",
+        "paint": "Pinturas",
+        "paintContent": "Nos especializamos en pintar condominios y apartamentos y mantenimiento de pintura de rutina",
+        "drywall": "Reparacion de Paneles de Yeso",
+        "drywallContent": "Ofrecemos servicios de expertos en la  reparación de paneles de yeso",
+        "lawn": "Cuidado del Césped",
+        "lawnContent": "Proporcionamos servicios de cuidado del césped que incluyen cortar, recortar, fertilizar, controlar malezas, recortar arbustos.",
+        "pressure": "Hidrojet",
+        "pressureContent": "Servicios  con el objetivo de conseguir resultados de limpieza perfectos en el hogar.",
+        "tiles":"Azulejos y Suelos",
+        "tilesContent":  "Experiencia en instalacion de azulejos y pisos",
+        "general": "Renovación General",
+        "generalContent": "Realizamos tu proyecto  de cambiar lo que deseas en tu hogar"
+
+    },
+
+    "about":{
+        "miniTitle": "Sobre Nosotros",
+        "title": "NUESTRA MISIÓN",
+        "content": "Nuestra empresa proporciona servicios de alta calidad para construir, renovar o mejorar estructuras y espacios, esto incluiye remodelación de viviendas, proyectos comerciales, mantenimiento de propiedades y más. Satisfaciendo las necesidades de los clientes, cumpliendo con los estándares de calidad y seguridad, entregando los proyectos en el tiempo y presupuesto establecidos."
+    },
+
+    "contact":{
+        "subtitle": "Tenemos lo que necesitas y ¡más!",
+        "name": "Nombre",
+        "message": "Mensaje",
+        "submit": "enviar"
+    }
+}

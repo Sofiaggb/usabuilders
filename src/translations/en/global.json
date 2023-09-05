@@ -1,0 +1,51 @@
+{
+    "header":{
+        "about": "About Us",
+        "contact": "Contact Us",
+        "en": "English",
+        "es": "Spanish"
+    },
+
+    "home":{
+        "title": "We have what you need and more..."
+    },
+
+    "CardsService":{
+        "title": "Our Services",
+        "electrician": "Electrician",
+        "electricianContent": "We offer services in all aspects of electrical installations.",
+        "roofing": "Roofing",
+        "roofingContent": "Our team will identify the problem and make an immediate repair to safeguard your property.",
+        "fences": "Fences",
+        "fencesContent":"we offer installation and maintenance services",
+        "Siding": "Siding",
+        "SidingContent": "maintenance-free beauty solutions and proven durability.",
+        "decks": "Decks",
+        "decksContent": "Improves home insulation.",
+        "paint": "Paint",
+        "paintContent": "We specialize in condo and apartment painting and routine painting maintenance.",
+        "drywall": "Drywall Repair",
+        "drywallContent": "We offer expert drywall repair services.",
+        "lawn": "Lawn Care",
+        "lawnContent": "We provide lawn care services including mowing, trimming, fertilizing, weed control, shrub trimming.",
+        "pressure": "Pressure Washer",
+        "pressureContent": "Services with the objective of achieving perfect cleaning results in the home.",
+        "tiles":"Tiles and Floors",
+        "tilesContent":  "Tile and flooring installation experience.",
+        "general": "General Renovation",
+        "generalContent": "We carry out your project to change what you want in your home."
+    },
+
+    "about":{
+        "miniTitle": "About Us",
+        "title": "OUR MISSION",
+        "content": "Our company provides high quality services to build, renovate or improve structures and spaces, including home remodeling, commercial projects, property maintenance and more. Meeting the needs of our clients, complying with quality and safety standards, delivering projects on time and on budget."
+    },
+
+    "contact":{
+        "subtitle": "We have what you need and more!",
+        "name": "Name",
+        "message": "Message",
+        "submit": "submit"
+    }
+}

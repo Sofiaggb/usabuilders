@@ -1,28 +1,28 @@
 import { Component } from "react";
 import about from "../assets/images/about.jpg"
 
+// traduccion
+import { withTranslation } from "react-i18next";
+
 class About extends Component {
 
     render() {
+
+        const {t} = this.props
         return (
             <div className="about">
                 <div className="mision">
                     <div className="mision-center">
                         <div className="con">
                             <div className="t-m">
-                            <p >sobre nosotros</p>
+                            <p >{t("about.miniTitle")}</p>
                             </div>
                         
                          <div className="line-about"></div>
                          </div>
-                        <h2 className="title-mision">NUESTRA MISIÓN</h2>
+                        <h2 className="title-mision">{t("about.title")}</h2>
                         <div className="tex-mision">
-                            <p>Nuestra empresa proporciona servicios de alta calidad para construir, renovar o mejorar
-                                estructuras y espacios, esto incluiye remodelación de viviendas, proyectos
-                                comerciales, mantenimiento de propiedades y más.
-                                Satisfaciendo las necesidades de los clientes, cumpliendo con los estándares de calidad y
-                                seguridad, entregando los proyectos en el tiempo y presupuesto establecidos.
-                            </p>
+                            <p>{t("about.content")}</p>
                         </div>
                     </div>
                 </div>
@@ -35,4 +35,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default withTranslation('global') (About);
