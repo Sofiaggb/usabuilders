@@ -4,13 +4,52 @@ import emailjs from "@emailjs/browser";
 
 // traduccion
 import { withTranslation } from "react-i18next";
+// alertas lindas
+import Swal from "sweetalert2";
 
 class Contact extends Component {
 
     formRef = React.createRef();
+    nameRef = React.createRef();
+    emailRef = React.createRef();
+    messageRef = React.createRef();
+
+    validateForm = () => {
+        let send = true;
+        const isValidName  = this.nameRef && !this.nameRef.current?.value;
+        const isValidEmail  = this.emailRef && !this.emailRef.current?.value;
+        const isValidMessage  = this.messageRef && !this.messageRef.current?.value;
+        if (isValidName) {
+            Swal.fire({
+                icon: 'error',
+                text: 'the name is required, please fill in the field '
+              });
+            return send = false ;
+        }if (isValidEmail) {
+            Swal.fire({
+                icon: 'error',
+                text: 'the email is required, please fill in the field '
+              });
+            return send = false ;
+        }if (isValidMessage) {
+            Swal.fire({
+                icon: 'error',
+                text: 'the message is required, please fill in the field '
+              });
+            return send = false ;
+        }
+
+        return send;
+        
+    }
+
+   
+      
 
       SendEmail = (event) =>{
         event.preventDefault();
+
+        if(this.validateForm()){
         const serviceId = process.env.REACT_APP_SEVICE_ID;
         const templateId = process.env.REACT_APP_TEMPLATE_ID;
         const apikey = process.env.REACT_APP_API_KEY;
@@ -21,7 +60,14 @@ class Contact extends Component {
 
         // limpiar formulario
         event.target.reset();
+        Swal.fire({
+            icon: 'success',
+            text: 'your email has been successfully sent',
+            showConfirmButton: false,
+            timer: 1500
+          })
      }
+    }
 
     render() {
 
@@ -41,20 +87,22 @@ class Contact extends Component {
                                 <li>
                                     <div className="left">
                                         <label htmlFor="name">{t("contact.name")}</label>
-                                        <input type="text" className="data-contact" name="name" placeholder="John" required/>
+                                        <input type="text" className="data-contact" name="name" placeholder="John" 
+                                         ref={this.nameRef} required pattern="[A-Za-z]"/>
                                     </div>
                                 </li>
 
                                 <li>
                                     <div>
                                         <label htmlFor="email">Email <span className="req">*</span></label>
-                                        <input type="email" className="data-contact" name="email" placeholder="john@gmail.com" required/>
+                                        <input type="email" className="data-contact" name="email" placeholder="john@gmail.com"
+                                          ref={this.emailRef} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
                                     </div>
                                 </li>
                                 <li><div className="divider"></div></li>
                                 <li>
                                     <label htmlFor="message">{t("contact.message")}</label>
-                                    <textarea cols="46" rows="3" name="message" required></textarea>
+                                    <textarea cols="46" rows="3" name="message" ref={this.messageRef}  required></textarea>
                                 </li>
 
                                 <li>

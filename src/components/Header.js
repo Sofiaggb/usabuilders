@@ -50,7 +50,7 @@ class Header extends Component {
 
                         </div>
                         <div className={this.state.closeHamburger} onClick={this.close}>
-                            <i class='bx bx-x'></i>
+                            <i className='bx bx-x'></i>
                         </div>
 
 
