@@ -2,6 +2,7 @@
     "header":{
         "about": "About Us",
         "contact": "Contact Us",
+        "language": "Language",
         "en": "English",
         "es": "Spanish"
     },

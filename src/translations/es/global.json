@@ -2,7 +2,8 @@
     "header":{
         "about": "Nosotros",
         "contact": "Contáctanos",
-        "en": "Ingles",
+        "language": "Idioma",
+        "en": "Inglés",
         "es": "Español"
     },
 

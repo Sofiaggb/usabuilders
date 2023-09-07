@@ -69,7 +69,7 @@ class Header extends Component {
                             <li><NavLink activeClassName="active" to="/about">{t('header.about')}</NavLink></li>
                             <li><NavLink activeClassName="active" to="/contact" >{t('header.contact')}</NavLink></li>
                             <li>
-                                <div className="idioma" onClick={this.idioma}>Idioma <i className={this.state.flechaIdiomas}></i></div>
+                                <div className="idioma" onClick={this.idioma}>{t('header.language')} <i className={this.state.flechaIdiomas}></i></div>
                                 
                                     <div className={this.state.buttonsIdioma}>
                                     <button className="button-idioma" onClick={() => i18n.changeLanguage("es")}>{t('header.es')}</button>
