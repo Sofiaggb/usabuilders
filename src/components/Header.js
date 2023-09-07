@@ -9,7 +9,9 @@ class Header extends Component {
     state = {
         clase: "menu-ul",
         hamburgerShow: "hamburger",
-        closeHamburger: "close-hamburger"
+        closeHamburger: "close-hamburger",
+        buttonsIdioma: "content-buttons-idioma",
+        flechaIdiomas: "bx bx-chevron-down"
     };
 
     show = () => {
@@ -24,8 +26,17 @@ class Header extends Component {
         this.setState(prevState => ({
             clase: prevState.clase === "menu-ul turn-on-menu" ? "menu-ul" : "menu-ul turn-on-menu",
             hamburgerShow: prevState.hamburgerShow === "hamburger hamburger-hidden" ? "hamburger" : "hamburger hamburger-hidden",
-            closeHamburger: prevState.closeHamburger === "close-hamburger close-hamburger-show" ? "close-hamburger" : "close-hamburger close-hamburger-show"
-        }))
+            closeHamburger: prevState.closeHamburger === "close-hamburger close-hamburger-show" ? "close-hamburger" : "close-hamburger close-hamburger-show",
+            buttonsIdioma: prevState.buttonsIdioma === "content-buttons-idioma show-idiomas" ? "content-buttons-idioma" : "content-buttons-idioma show-idiomas",
+            flechaIdiomas: prevState.flechaIdiomas === "bx bx-chevron-down bx-rotate-180" ? "bx bx-chevron-down" : "bx bx-chevron-down bx-rotate-180"
+        }));
+    }
+
+    idioma = () => {
+        this.setState(prevState => ({
+            buttonsIdioma: prevState.buttonsIdioma === "content-buttons-idioma" ? "content-buttons-idioma show-idiomas" : "content-buttons-idioma",
+            flechaIdiomas: prevState.flechaIdiomas === "bx bx-chevron-down" ? "bx bx-chevron-down bx-rotate-180" : "bx bx-chevron-down"
+         }));
     }
 
     render() {
@@ -58,10 +69,13 @@ class Header extends Component {
                             <li><NavLink activeClassName="active" to="/about">{t('header.about')}</NavLink></li>
                             <li><NavLink activeClassName="active" to="/contact" >{t('header.contact')}</NavLink></li>
                             <li>
-                                <select name="idioma" className="idioma">
-                                    <option value="en" onClick={() => i18n.changeLanguage("en")}>{t('header.en')}</option>
-                                    <option value="es" onClick={() => i18n.changeLanguage("es")} >{t('header.es')}</option>
-                                </select>
+                                <div className="idioma" onClick={this.idioma}>Idioma <i className={this.state.flechaIdiomas}></i></div>
+                                
+                                    <div className={this.state.buttonsIdioma}>
+                                    <button className="button-idioma" onClick={() => i18n.changeLanguage("es")}>{t('header.es')}</button>
+                                    <button className="button-idioma" onClick={() => i18n.changeLanguage("en")}>{t('header.en')}</button>
+                                </div>
+                               
                             </li>
                         </ul>
                     </nav>
