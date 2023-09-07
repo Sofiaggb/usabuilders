@@ -433,16 +433,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   margin-left: 40px;
 }
 
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
 
-.contact-text a:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
 
 

@@ -88,7 +88,7 @@ class Contact extends Component {
                                     <div className="left">
                                         <label htmlFor="name">{t("contact.name")}</label>
                                         <input type="text" className="data-contact" name="name" placeholder="John" 
-                                         ref={this.nameRef} required pattern="[A-Za-z]"/>
+                                         ref={this.nameRef} required pattern="[A-Za-z\s]{3,}"/>
                                     </div>
                                 </li>
 

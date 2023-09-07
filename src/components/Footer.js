@@ -6,7 +6,7 @@ import { withTranslation } from "react-i18next";
 class Footer extends Component {
     render() {
         
-    const { t, i18n } = this.props;
+    const { t} = this.props;
 
         return (
             <div className="footer">

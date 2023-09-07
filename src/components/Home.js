@@ -11,7 +11,7 @@ class Home extends Component {
 
     render() {
 
-        const {t, i18n} = this.props;
+        const {t} = this.props;
         return (
             <div className="home">
                 <section className="section-1">
