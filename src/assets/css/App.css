@@ -774,7 +774,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   .menu-ul {
   background: white;
   position: absolute;
-  top: 3rem;
+  top: -30rem;
   right: 0rem;
   z-index: 0;
   visibility: inherit;
@@ -787,6 +787,7 @@ text-shadow: 4px 4px 4px rgb(54, 50, 50);
   visibility: visible;
   opacity: 1;
   z-index: 1;
+  top: 3rem;
 }
 
   #menu ul li {

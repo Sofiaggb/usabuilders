@@ -27,8 +27,8 @@ class Header extends Component {
             clase: prevState.clase === "menu-ul turn-on-menu" ? "menu-ul" : "menu-ul turn-on-menu",
             hamburgerShow: prevState.hamburgerShow === "hamburger hamburger-hidden" ? "hamburger" : "hamburger hamburger-hidden",
             closeHamburger: prevState.closeHamburger === "close-hamburger close-hamburger-show" ? "close-hamburger" : "close-hamburger close-hamburger-show",
-            buttonsIdioma: prevState.buttonsIdioma === "content-buttons-idioma show-idiomas" ? "content-buttons-idioma" : "content-buttons-idioma show-idiomas",
-            flechaIdiomas: prevState.flechaIdiomas === "bx bx-chevron-down bx-rotate-180" ? "bx bx-chevron-down" : "bx bx-chevron-down bx-rotate-180"
+            buttonsIdioma: prevState.buttonsIdioma === "content-buttons-idioma show-idiomas" ? "content-buttons-idioma" : "content-buttons-idioma",
+            flechaIdiomas: prevState.flechaIdiomas === "bx bx-chevron-down bx-rotate-180" ? "bx bx-chevron-down" : "bx bx-chevron-down "
         }));
     }
 
