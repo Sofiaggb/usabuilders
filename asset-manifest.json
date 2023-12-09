@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/usabuilders/static/css/main.c60feb66.css",
-    "main.js": "/usabuilders/static/js/main.891b353e.js",
+    "main.css": "/usabuilders/static/css/main.9f279056.css",
+    "main.js": "/usabuilders/static/js/main.98e8c939.js",
     "static/js/787.6f1d7252.chunk.js": "/usabuilders/static/js/787.6f1d7252.chunk.js",
     "static/media/about.jpg": "/usabuilders/static/media/about.155c0dde67757afbe800.jpg",
     "static/media/techo.jpg": "/usabuilders/static/media/techo.aca0d4c51b5adf76aff4.jpg",
@@ -15,12 +15,12 @@
     "static/media/paneles.jpg": "/usabuilders/static/media/paneles.47f410070e76c13881d9.jpg",
     "static/media/vallas.jpg": "/usabuilders/static/media/vallas.e69607b2e396fbe4b4c9.jpg",
     "index.html": "/usabuilders/index.html",
-    "main.c60feb66.css.map": "/usabuilders/static/css/main.c60feb66.css.map",
-    "main.891b353e.js.map": "/usabuilders/static/js/main.891b353e.js.map",
+    "main.9f279056.css.map": "/usabuilders/static/css/main.9f279056.css.map",
+    "main.98e8c939.js.map": "/usabuilders/static/js/main.98e8c939.js.map",
     "787.6f1d7252.chunk.js.map": "/usabuilders/static/js/787.6f1d7252.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c60feb66.css",
-    "static/js/main.891b353e.js"
+    "static/css/main.9f279056.css",
+    "static/js/main.98e8c939.js"
   ]
 }
