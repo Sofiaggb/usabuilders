@@ -1,12 +1,15 @@
 import { Component } from "react";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 
+// components
 import Header from "./components/Header";
-import Home from "./components/Home";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Error from "./components/Error";
-import Contact from "./components/Contact";
+
+// pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Error from "./pages/Error";
+import Contact from "./pages/Contact";
 
 class Router extends Component{
 

@@ -2,7 +2,7 @@ import { Component } from "react";
 import paisaje from '../assets/images/paisaje.jpeg';
 
 // componentes
-import CardsService from "./CardsService";
+import CardsService from "../components/CardsService";
 
 // traducciones
 import { withTranslation } from "react-i18next";
