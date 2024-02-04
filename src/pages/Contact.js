@@ -121,7 +121,7 @@ class Contact extends Component {
                             {/* <div className="city"> */}
                             <i className='bx bx-location-plus' ></i>
                             {/* <div className="place space"> */}
-                            <span className="contact-text space">Hampton Rd, Virginia</span>
+                            <span className="contact-text space">City, Country</span>
                             {/* </div> */}
                             {/* </div> */}
                         </li>
@@ -129,14 +129,14 @@ class Contact extends Component {
                         <li className="list-item">
                         <i className='bx bx-phone'></i>
                                 <span className="contact-text space">
-                                    +1 (757) 749-9898
+                                    +1 (111) 111-1111
                                 </span>
                         </li>
 
                         <li className="list-item">
                             <i className='bx bx-envelope'></i>
                                 <span className="contact-text space">
-                                    usabuilders2020@gmail.com
+                                    email@gmail.com
                                 </span>
                         </li>
 
